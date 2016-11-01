@@ -1,0 +1,220 @@
+<html>
+<style type="text/css">
+	
+.feriado{
+	background-color: red;
+}
+.data{
+	background-color: lightgreen;
+}
+
+
+
+
+</style>
+<script type="text/javascript">
+
+function newData(id){
+	var teste = document.getElementById(id).value;
+	teste = teste.toString();
+	var data = prompt("Insira Data : ");
+	document.getElementById("textao").innerHTML += "<table><tr><th class='data'>"+teste+"</th><th>"+data+"</th></tr></table>";
+	
+	
+	document.getElementById(id).className = "data";
+   
+}
+
+
+
+
+function calendario(){
+
+
+var d = new Date("1, 1, 2010 ");
+var newd = d.toString();
+newd = newd.substring(0,3);
+var teste = 0;
+if(newd == "Fri"){
+	for(var i=5;i<=35; i++){
+		var dia = "j" + i.toString();
+		dia = dia.toString();
+		document.getElementById(dia).innerHTML = teste+1;
+		document.getElementById(dia).value = teste+1;
+		teste++;
+		if(document.getElementById(dia).value == 1){
+			document.getElementById(dia).className="feriado";
+		} 
+	}
+}
+else if(newd == "Sun"){
+	for(var i=7;i<=37; i++){
+		var dia = "j" + i.toString();
+		dia = dia.toString();
+		document.getElementById(dia).innerHTML = teste+1;
+		document.getElementById(dia).value = teste+1;
+		teste++;
+	}
+}
+else if(newd == "Sat"){
+	for(var i=5;i<=36; i++){
+		var dia = "j" + i.toString();
+		dia = dia.toString();
+		document.getElementById(dia).innerHTML = teste+1;
+		document.getElementById(dia).value = teste+1;
+		teste++;
+		if(document.getElementById(dia).value == 1){
+			document.getElementById(dia).className="feriado";
+		} 
+	}
+}
+else if(newd == "Thu"){
+	for(var i=4;i<=34; i++){
+		var dia = "j" + i.toString();
+		dia = dia.toString();
+		document.getElementById(dia).innerHTML = teste+1;
+		document.getElementById(dia).value = teste+1;
+		teste++;
+		if(document.getElementById(dia).value == 1){
+			document.getElementById(dia).className="feriado";
+		} 
+	}
+}
+
+else if(newd == "Wed"){
+	for(var i=3;i<=33; i++){
+		var dia = "j" + i.toString();
+		dia = dia.toString();
+		document.getElementById(dia).innerHTML = teste+1;
+		document.getElementById(dia).value = teste+1;
+		teste++;
+		if(document.getElementById(dia).value == 1){
+			document.getElementById(dia).className="feriado";
+		} 
+	}
+}
+else if(newd == "Tue"){
+	for(var i=3;i<=33; i++){
+		var dia = "j" + i.toString();
+		dia = dia.toString();
+		document.getElementById(dia).innerHTML = teste+1;
+		document.getElementById(dia).value = teste+1;
+		teste++;
+		if(document.getElementById(dia).value == 1){
+			document.getElementById(dia).className="feriado";
+		} 
+	}
+}
+else if(newd == "Mon"){
+	for(var i=3;i<=33; i++){
+		var dia = "j" + i.toString();
+		dia = dia.toString();
+		document.getElementById(dia).innerHTML = teste+1;
+		document.getElementById(dia).value = teste+1;
+		teste++;
+		if(document.getElementById(dia).value == 1){
+			document.getElementById(dia).className="feriado";
+		} 
+	}
+}
+}
+
+
+
+
+
+
+
+</script>
+<body onload= calendario()>
+<table id = "janeiro">
+	<tbody>
+		<tr>
+		<TH>Seg</TH>
+
+<TH>Ter</TH>
+
+<TH>Qua</TH>
+
+<TH>Qui</TH>
+<TH>Sex</TH>
+<TH>Sab</TH>
+<TH>Dom</TH>
+
+		</tr>
+
+
+		<tr>
+			<td id='j1' onclick="newData(this.id)"></td>
+			<td id='j2' onclick="newData(this.id)"></td>
+			<td id='j3' onclick="newData(this.id)"></td>
+			<td id='j4' onclick="newData(this.id)"></td>
+			<td id='j5' onclick="newData(this.id)"></td>
+			<td id='j6' onclick="newData(this.id)"></td>
+			<td id='j7' onclick="newData(this.id)"></td>
+		</tr>
+		<tr>
+			<td id='j8' onclick="newData(this.id)"> A</td>
+			<td id='j9' onclick="newData(this.id)"> A</td>
+			<td id='j10' onclick="newData(this.id)">A </td>
+			<td id='j11'onclick="newData(this.id)">A </td>
+			<td id='j12'onclick="newData(this.id)">A </td>
+			<td id='j13'onclick="newData(this.id)">A </td>
+			<td id='j14' onclick="newData(this.id)">A </td>
+		</tr>
+		<tr>
+			<td id='j15' onclick="newData(this.id)"> A</td>
+			<td id='j16' onclick="newData(this.id)"> A</td>
+			<td id='j17'onclick="newData(this.id)"> A</td>
+			<td id='j18'onclick="newData(this.id)"> A</td>
+			<td id='j19'onclick="newData(this.id)"> A</td>
+			<td id='j20'onclick="newData(this.id)"> A</td>
+			<td id='j21'onclick="newData(this.id)"> A</td>
+		</tr>
+		<tr>
+			<td id='j22'onclick="newData(this.id)"></td>
+			<td id='j23'onclick="newData(this.id)"></td>
+			<td id='j24'onclick="newData(this.id)"></td>
+			<td id='j25'onclick="newData(this.id)"></td>
+			<td id='j26'onclick="newData(this.id)"></td>
+			<td id='j27'onclick="newData(this.id)"></td>
+			<td id='j28'onclick="newData(this.id)"></td>
+		</tr>
+		<tr>
+			<td id='j29'onclick="newData(this.id)"></td>
+			<td id='j30'onclick="newData(this.id)"></td>
+			<td id='j31'onclick="newData(this.id)"></td>
+			<td id='j32'onclick="newData(this.id)"></td>
+			<td id='j33'onclick="newData(this.id)"></td>
+			<td id='j34'onclick="newData(this.id)"></td>
+			<td id='j35'onclick="newData(this.id)"></td>
+		</tr>
+		<tr>
+			<td id='j36'> </td>
+			<td id='j37'> </td>
+			<td id='j38'> </td>
+			<td id='j39'> </td>
+			<td id='j40'> </td>
+			<td id='j41'> </td>
+			<td id='j42'> </td>
+		</tr>
+	</tbody>
+</table>
+<table>
+<div name="feriado" id="divferiado">
+<tr id="numeroferiado">
+ <th class="feriado">
+ <label>1</label>
+</th>
+<div>
+<th>
+<label>Confraterniza&ccedil;&atilde;o Internacional</label>
+</th>
+</tr>
+</table>
+<div id="textao">
+</div>
+
+</body>
+
+</html>
