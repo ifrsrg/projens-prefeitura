@@ -1,12 +1,42 @@
+/*
+var d = new Date(2016, 0, 1);
+var table = document.createElement('table');
+
+while (d.getYear() + 1900 < 2017) {
+	var tr = document.createElement('tr');
+	table.appendChild(tr);
+	var td = document.createElement('td');
+	td.classList.push('dia')
+	tr.appendChild(td);
+	td.innerHTML = d.toString();
+
+	d = new Date(d.getYear() + 1900, d.getMonth(), d.getDate() + 1);
+}
+
+document.body.appendChild(table);
+
+
+var tds = document.querySelectorAll('td')
+
+tds[15].addEventListener('click', function(evt) {
+console.dir(evt.target.innerHTML);
+});
+
+$('td.dia').on('click', function(evt) {
+	// $(this) // quem foi clicado
+	
+});
+*/
+
 function newData(id){
 	var teste = document.getElementById(id).value;
 	teste = teste.toString();
 	var data = prompt("Insira Data : ");
 	document.getElementById("text").innerHTML += "<table><tr><th class='data'>"+teste+"</th><th>"+data+"</th></tr></table>";
-	
-	
+
+
 	document.getElementById(id).className = "data";
-   
+
 }
 function calendarioimpar(mes){
 var nvar = mes.toString();
@@ -27,8 +57,8 @@ if(newd == "Fri"){
 			document.getElementById(dia).className="feriado";
 			var html = "<table><tr id='numeroferiado'><td class='feriado'><label class='feriado'>1</label></td><th><label>Confraterniza&ccedil;&atilde;o Internacional</label></th></tr></table>";
 			document.getElementById("divferiado").innerHTML = html;
-		} 
-	} 
+		}
+	}
 	}
 }
 else if(newd == "Sun"){
@@ -43,7 +73,7 @@ else if(newd == "Sun"){
 			document.getElementById(dia).className="feriado";
 			var html = "<table><tr id='numeroferiado'><td class='feriado'><label class='feriado'>1</label></td></div><th><label>Confraterniza&ccedil;&atilde;o Internacional</label></th></tr></table>";
 			document.getElementById("divferiado").innerHTML = html;
-		} 
+		}
 	}
 	}
 }
@@ -57,8 +87,8 @@ else if(newd == "Sat"){
 		if(nvar == "1"){
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
-	} 
+		}
+	}
 	}
 }
 else if(newd == "Thu"){
@@ -71,8 +101,8 @@ else if(newd == "Thu"){
 		if(nvar == "1"){
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
-	} 
+		}
+	}
 	}
 }
 else if(newd == "Wed"){
@@ -85,8 +115,8 @@ else if(newd == "Wed"){
 		if(nvar == "1"){
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
-	} 
+		}
+	}
 	}
 }
 else if(newd == "Tue"){
@@ -99,7 +129,7 @@ else if(newd == "Tue"){
 		if(nvar == "1"){
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
+		}
 	}
 	}
 }
@@ -113,8 +143,8 @@ else if(newd == "Mon"){
 		if(nvar == "1"){
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
-	} 
+		}
+	}
 	}
 }
 }
@@ -135,7 +165,7 @@ if(newd == "Fri"){
 		teste++;
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
+		}
 	}
 }
 else if(newd == "Sun"){
@@ -147,7 +177,7 @@ else if(newd == "Sun"){
 		teste++;
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
+		}
 	}
 }
 else if(newd == "Sat"){
@@ -159,7 +189,7 @@ else if(newd == "Sat"){
 		teste++;
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
+		}
 	}
 }
 else if(newd == "Thu"){
@@ -171,7 +201,7 @@ else if(newd == "Thu"){
 		teste++;
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
+		}
 	}
 }
 else if(newd == "Wed"){
@@ -183,7 +213,7 @@ else if(newd == "Wed"){
 		teste++;
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
+		}
 	}
 }
 else if(newd == "Tue"){
@@ -195,7 +225,7 @@ else if(newd == "Tue"){
 		teste++;
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
+		}
 	}
 }
 else if(newd == "Mon"){
@@ -207,7 +237,7 @@ else if(newd == "Mon"){
 		teste++;
 		if(document.getElementById(dia).value == 1){
 			document.getElementById(dia).className="feriado";
-		} 
+		}
 	}
 }
 }
