@@ -1,0 +1,122 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="marcio.js"></script>
+</head>
+<style type="text/css">
+	
+.feriado{
+	background-color: red;
+}
+.data{
+	background-color: lightgreen;
+	height: 10px;
+	width: 10px;
+}
+table{
+    width: 200px;
+}
+body {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+}
+th
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+</style>
+
+
+<body onload= calendarioimpar(1) center>
+<table class = "table-striped" id = "janeiro">
+	
+	 <thead class="thead-inverse">
+		<tr>
+		<TH class="col-md-1" >Seg</TH>
+
+<TH class="col-md-1" >Ter</TH>
+
+<TH class="col-md-1" >Qua</TH>
+
+<TH class="col-md-1" >Qui</TH>
+<TH class="col-md-1" >Sex</TH>
+<TH class="col-md-1" >Sab</TH>
+<TH class="col-md-1" >Dom</TH>
+
+		</tr>
+		</thead>
+<tbody>
+
+		<tr>
+			<td class="col-md-1" id='j1' onclick="newData(this.id)"></td>
+			<td id='j2' onclick="newData(this.id)"></td>
+			<td id='j3' onclick="newData(this.id)"></td>
+			<td id='j4' onclick="newData(this.id)"></td>
+			<td id='j5' onclick="newData(this.id)"></td>
+			<td id='j6' onclick="newData(this.id)"></td>
+			<td id='j7' onclick="newData(this.id)"></td>
+		</tr>
+		<tr>
+			<td id='j8' onclick="newData(this.id)"> A</td>
+			<td id='j9' onclick="newData(this.id)"> A</td>
+			<td id='j10' onclick="newData(this.id)">A </td>
+			<td id='j11'onclick="newData(this.id)">A </td>
+			<td id='j12'onclick="newData(this.id)">A </td>
+			<td id='j13'onclick="newData(this.id)">A </td>
+			<td id='j14' onclick="newData(this.id)">A </td>
+		</tr>
+		<tr>
+			<td id='j15' onclick="newData(this.id)"> A</td>
+			<td id='j16' onclick="newData(this.id)"> A</td>
+			<td id='j17'onclick="newData(this.id)"> A</td>
+			<td id='j18'onclick="newData(this.id)"> A</td>
+			<td id='j19'onclick="newData(this.id)"> A</td>
+			<td id='j20'onclick="newData(this.id)"> A</td>
+			<td id='j21'onclick="newData(this.id)"> A</td>
+		</tr>
+		<tr>
+			<td id='j22'onclick="newData(this.id)"></td>
+			<td id='j23'onclick="newData(this.id)"></td>
+			<td id='j24'onclick="newData(this.id)"></td>
+			<td id='j25'onclick="newData(this.id)"></td>
+			<td id='j26'onclick="newData(this.id)"></td>
+			<td id='j27'onclick="newData(this.id)"></td>
+			<td id='j28'onclick="newData(this.id)"></td>
+		</tr>
+		<tr>
+			<td id='j29'onclick="newData(this.id)"></td>
+			<td id='j30'onclick="newData(this.id)"></td>
+			<td id='j31'onclick="newData(this.id)"></td>
+			<td id='j32'onclick="newData(this.id)"></td>
+			<td id='j33'onclick="newData(this.id)"></td>
+			<td id='j34'onclick="newData(this.id)"></td>
+			<td id='j35'onclick="newData(this.id)"></td>
+		</tr>
+		<tr>
+			<td id='j36' onclick="newData(this.id)"> </td>
+			<td id='j37' onclick="newData(this.id)"> </td>
+			<td id='j38' onclick="newData(this.id)"> </td>
+			<td id='j39' onclick="newData(this.id)"> </td>
+			<td id='j40' onclick="newData(this.id)"> </td>
+			<td id='j41' onclick="newData(this.id)"> </td>
+			<td id='j42' onclick="newData(this.id)"> </td>
+		</tr>
+	</tbody>
+</table>
+		
+<div name="feriado" id="divferiado">
+</div>
+</table>
+<div id="text">
+</div>
+
+</body>
+
+</html>
